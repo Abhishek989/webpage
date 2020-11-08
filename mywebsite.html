@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <title> FASHION SHOES</title>
+    <link rel="stylesheet" type="text/css" href="mywebsite.css">
+    <link rel="stylesheet" href="font-awesome.css">
+    <link rel="stylesheet" href="font-awesome_002.css">
+    <script>
+        var images = [
+            '1.jpg',
+            '2.jpg',
+            '3.png',
+            '4.jpg'
+
+        ];
+        var x = setInterval(next, 5000);
+        var num = 0;
+
+        function next() {
+            var slider = document.getElementById('slider-image');
+            num++;
+            if (num >= images.length) {
+                num = 0;
+            }
+            slider.src = images[num];
+        }
+
+        function prev() {
+            var slider = document.getElementById('slider-image');
+            num--;
+            if (num < 0) {
+                num = images.length - 1;
+            }
+            slider.src = images[num];
+        }
+    </script>
+
+
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="logo">
+            <img class="imglogo" src="SeekPng.png">
+        </div>
+        <div class="top-content">
+
+            <ul>
+                <li>
+                    <input class="search-bar" type="text" placeholder="Search" style="color:black">
+
+                </li>
+                <li class="home" style=" border:  1px solid black; "><a> Home </a></li>
+                <li class="login" style=" border:  1px solid black;"><a> LogIn </a></li>
+                <li class="about-me" style=" border:  1px solid black;"><a> Contact Us </a></li>
+            </ul>
+        </div>
+
+
+        <header>
+            <div class="top-main">
+                <div class="head">
+                    <h1 class="heading" style="font-style:italic">NIKE</h1>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="shoes-type">
+        <ul>
+
+            <li>MEN</li>
+
+            <li>WOMAN</li>
+
+            <li>KIDS</li>
+
+            <li>SPORTS</li>
+
+        </ul>
+    </div>
+
+    <div class="slider-container">
+        <button class="btn1" onclick="prev()">&lt;</button>
+        <img id="slider-image" src="4.jpg">
+        <button class="btn2" onclick="next()">&gt;</button>
+    </div>
+    <div class="middle-button">
+        <p>No matter where we dance, we move as one.</p>
+        <button>Shop</button>
+    </div>
+    <div class="last-middle">
+        <h3>Trending</h3>
+        <div class="box">
+            <div class="image-container2">
+
+                <img src="image1.jpg">
+                <p style="position: absolute;top: 1280px;left: 273px;">Nike Blazer Mid '77' Vitage</p>
+                <button class="btn1">shop</button>
+                <img src="image2.jpg">
+                <button class="btn2">shop</button>
+                <p style="position: absolute;top: 1286px;left: 847px;">Nike Air Force 1 </p>
+            </div>
+        </div>
+        <div class="secound-last">
+<p>Featured</p>
+<div class="secound-image"> 
+<img src="secound-image1.jpg">
+<p style="top: 1808px;font-size: 21px;">Pagasus Trail 2 GORE-TEX</p>
+<p class="p2" style="font-size: 55px;top: 1849px;"> RUN THROUGH IT</p>
+<div class="btn">
+<button> shop</button>
+ </div>
+</div>
+        </div>
+        <div class="type-of-shoes">
+            <div class="catogary">
+                <ul>
+                    <li>SHOES OF KIDS</li>
+                    <li>SHOES OF MENS</li>
+                    <li>SHOES OF WOMENS</li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="footer" style="margin-left: -14%;margin-right: -157px;">
+            <div class="box">
+                <h5>Find A Store</h5>
+                <h5>Become A Member</h5>
+                <h5>Sign Up for Email</h5>
+                <h5>Send Us Feedback</h5>
+            </div>
+            <div class="box">
+                <h5>Get Help</h5>
+                <p>Order Status
+                </p>
+                <p>
+                </p>
+                <p>Delivery</p>
+                <p>Returns</p>
+                <p>Payment Options</p>
+                <p>Contact Us On Nike.com Inquiries</p>
+                <p>Contact Us On All Other Inquiries</p>
+            </div>
+            <div class="box">
+                <h5>About Nike</h5>
+                <br>
+                <p>Delivery</p>
+                <p>News</p>
+                <p>Careers</p>
+                <p>Investors</p>
+                <p>Sustainability
+                </p>
+                <p>
+
+                </p>
+            </div>
+            <div class="social">
+                <p style="margin-bottom:20px ;"> Join Us On</p>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+</body></html>

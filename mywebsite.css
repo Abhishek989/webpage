@@ -61,6 +61,7 @@ height: 56px;
 position: fixed;
 width: 100%;
 margin-top: -26px;
+z-index: 1;
 }
 .far fa-search {
     font-size: 50px;
